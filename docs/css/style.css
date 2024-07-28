@@ -1,0 +1,337 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: 'MaruBuri';
+    font-weight: 300; 
+    font-style: normal; 
+    src: local(MaruBuri-Light),
+    local(MaruBuri-Light),
+    url(../font/MaruBuri-Light.woff) format('woff'),
+    url(../font/MaruBuri-Light.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'MaruBuri';
+    font-weight: 400; 
+    font-style: normal; 
+    src: local(MaruBuri-Regular),
+    local(MaruBuri-Regular),
+    url(../font/MaruBuri-Regular.woff) format('woff'),
+    url(../font/MaruBuri-Regular.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'MaruBuri';
+    font-weight: 500; 
+    font-style: normal; 
+    src: local(MaruBuri-SemiBold),
+    local(MaruBuri-SemiBold),
+    url(../font/MaruBuri-SemiBold.woff) format('woff'),
+    url(../font/MaruBuri-SemiBold.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 300; 
+    font-style: normal; 
+    src: local(NanumSquareR),
+    local(NanumSquare),
+    url(../font/NanumSquareR.woff) format('woff'),
+    url(../font/NanumSquareR.woff2) format('wof2');
+}
+@font-face {
+    font-family: 'NanumSquare';
+    font-weight: 500; 
+    font-style: normal; 
+    src: local(NanumSquareOTF_acR),
+    local(NanumSquare),
+    url(../font/NanumSquareOTF_acR) format('woff'),
+    url(../font/NanumSquareOTF_acR) format('wof2');
+}
+@font-face {
+    font-family: 'CormorantUnicase-Regular';
+    font-weight: 400; 
+    font-style: normal; 
+    src: local(CormorantUnicase-Regular),
+    local(CormorantUnicase-Regular),
+    url(../font/CormorantUnicase-Regular.woff) format('woff'),
+    url(../font/CormorantUnicase-Regular.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Lato';
+    font-weight: 400; 
+    font-style: normal; 
+    src: local(Lato-Regular),
+    local(Lato-Regular),
+    url(../font/Lato-Regular.woff) format('woff'),
+    url(../font/Lato-Regular.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'AnsteryScript';
+    font-weight: 400; 
+    font-style: normal; 
+    src: local(AnsteryScript),
+    local(AnsteryScript),
+    url(../font/AnsteryScript.woff) format('woff'),
+    url(../font/AnsteryScript.woff) format('woff2');
+}
+
+
+html {
+    height: 100vh; /* set viewport constraint */
+    min-height: 100%; /* enforce height */
+}
+body{touch-action:pan-y;height:100vh; height: -webkit-fill-available;color:#333;font-family: -apple-system, '맑은 고딕', 'malgun gothic', 'AppleGothicNeoSD', 'Apple SD 산돌고딕 Neo', 'Microsoft NeoGothic',  'Droid sans', sans-serif}
+.wrap_main{display:block;min-width:320px;padding-bottom:8.33vw;background-color:#f4f4f4}
+.img_g{display:block;width:100%}
+.txt_g{text-align:center;font-size:3.7vw;font-family: 'MaruBuri',serif}
+.txt_small{font-size:2.8vw}
+.area_intro{position:relative;padding-bottom:8.33vw}
+.area_intro .img_g{width:100%}
+.area_intro .thumb_img{display:block;position:relative;padding:12.22vw 11.11vw 11.11vw}
+.area_intro .thumb_img:after{position:absolute;left:11.11vw;right:11.11vw;top:12.22vw;bottom:11.11vw;background-color:rgba(0,0,0,0.02);content:''}
+.area_intro .txt_date{position:absolute;top:7.5vw;right:11.11vw;font-size:3vw;line-height:2.78vw;color:#1A1818;font-family:Maruburi, serif}
+.area_intro .txt_intro{position:absolute;right:7.77vw;bottom:2.3vw;font-size:15.6vw;line-height:16vw;color:#1A1818;font-family:AnsteryScript, serif;text-align:right}
+
+.desc_intro{padding:12.5vw 0 16.6vw;font-weight:500;font-size:3.89vw;line-height:7.78vw;color:#333;font-family:'MaruBuri';text-align:center}
+.area_intro .wrap_img{position:relative}
+.couple_name{position:absolute;right:-6.94vw;top:50%;font-size:3.33vw;font-family:MaruBuri, serif;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.couple_name .item_txt{display:block;padding:0.55vw 0;text-align:center}
+.couple_name .txt_and{padding:2.7vw 0}
+.txt_parent .wrap_fa{position:relative}
+.wrap_fa .ico_flower{position:absolute;left:-4vw;width:3.2vw;height:3.2vw;margin-top:1.65vw;background:url(../images/ico_flower.png) no-repeat 0 0;background-size:100% auto}
+
+.area_banner{overflow:hidden;position:relative;height:69vw}
+.area_banner .box_img{position:relative;height:100%}
+.area_banner .box_img .img_g{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:50% 100%}
+.info_couple{padding-top:11.11vw;font-family:'MaruBuri',serif;text-align:center}
+.info_host #call_1, .info_host #call_2, .info_host #call_3, .info_host #call_4, .info_couple #call_5, .info_couple #call_6{width:4.16vw;height:4.16vw;margin:1.38vw 0}
+.info_couple [class*="info_"]{display:block;font-size:0;line-height:7.2vw;color:#333}
+.info_couple .info_bride{padding-top:5px}
+.info_couple .txt_parent{display:inline-block;font-size:3.61vw;font-weight:300;vertical-align:top}
+.info_couple .txt_parent .txt_bold{font-size:3.89vw;font-weight:500}
+.info_couple .txt_relation{display:inline-block;min-width:8.15vw;padding:0 1.2vw;font-weight:300;font-size:3.61vw;vertical-align:top}
+.info_couple .txt_name{display:inline-block;font-weight:500;font-size:3.89vw;vertical-align:top}
+.info_couple .link_call, .info_host .link_call{display:inline-block;padding:0 1.66vw;vertical-align:top}
+
+.info_host{position:relative;width:69.44vw;margin:5.55vw auto 0;padding:5.55vw 0 6.11vw;font-size:0;font-family:'Maruburi',serif}
+.info_host:before{position:absolute;left:0;top:0;right:0;height:1px;background-color:rgba(0,0,0,0.06);content:''}
+.info_host:after{position:absolute;left:0;bottom:0;right:0;height:1px;background-color:rgba(0,0,0,0.06);content:''}
+.info_host .tit_host{font-size:3.61vw;color:#222}
+.info_host .desc_host{padding-top:3.61vw}
+.info_host .mark_host{display:inline-block;width:5.55vw;height:5.55vw;margin:0.83vw 0;font-size:3.33vw;line-height:5.55vw;color:#FFFCE6;border-radius:50%;background-color:#D9CEC1;text-align:center;vertical-align:top}
+.info_host .txt_name{display:inline-block;margin:0.83vw 0;padding-left:1.11vw;font-size:3.61vw;line-height:5.55vw;vertical-align:top}
+.info_host .wrap_info{display:inline-block;vertical-align:top}
+.info_host .wrap_info + .wrap_info{padding-left:3.33vw}
+.list_host li{position:relative}
+.list_host li + li{margin-top:4.16vw;padding-top:4.72vw}
+.list_host li + li:before{position:absolute;left:0;top:0;right:0;height:1px;background-color:rgba(0,0,0,0.06);content:''}
+
+.area_tit{display:block;padding-top:19.4vw;text-align:center}
+.tit_g{display:inline-block;position:relative;font-weight:normal;font-size:3.89vw;line-height:6.11vw;color:#1a1a1a;vertical-align:top}
+.tit_g:after{position:absolute;left:0;right:0;bottom:0;height:1px;background-color:#1a1a1a;content:''}
+
+.area_calendar{padding-top:10.55vw;font-family:Lato;text-align:center}
+.area_calendar .txt_month{display:inline-block;font-size:4.44vw;line-height:6.66vw;color:#333;vertical-align:top}
+.area_calendar .wrap_calendar{padding:3.33vw 0 0}
+.tbl_month{table-layout:fixed;width:83.33vw;margin:0 auto}
+.tbl_month tr th{font-weight:normal;font-size:3.7vw;padding:5.11vw 1.94vw}
+.tbl_month tr td{font-size:3.89vw;padding:2.5vw 1.94vw}
+.tbl_month .emph_sun{color:#B53939}
+.tbl_month .emph_day{position:relative}
+.tbl_month .emph_day:before{position:absolute;z-index:-1;top:50%;left:50%;width:8.33vw;height:8.33vw;border-radius:50%;background-color:rgba(242,191,128,0.25);transform:translate(-50%, -50%);content:''}
+.area_date .info_day{width:80vw;margin:8vw auto;padding:6.5vw 0;font-family:NanumSquare,san-serif;font-weight:500;font-size:3.89vw;line-height:1.5;border-top:1px solid rgba(0,0,0,0.07);border-bottom:1px solid rgba(0,0,0,0.07);color:#000;text-align:center}
+.area_date .txt_date{display:block;font-weight:500}
+.area_date .emph_time{display:block;padding-top:6px}
+
+.area_photo{position:relative}
+.area_photo .wrap_photo{padding-top:11vw}
+.area_photo .txt_photo{padding-top:8.66vw;font-size:3.61vw;line-height:5.55vw;text-align:center}
+.slide_photo .photo_wedding{display:-webkit-box;display:flex;overflow:hidden;height:150vw;position:relative;justify-content:center;align-items:center}
+.slide_photo .photo_wedding:after{position:absolute;left:0;right:0;top:0;bottom:0;background-color:rgba(0,0,0,0.04);content:''}
+.slide_photo .flicking-pagination{padding:2vw;font-size:4vw;color:#222;line-height:6vw;font-family:NotoSansKR;text-align:right}
+.photo_wedding.type_start{align-items:flex-start}
+.photo_wedding.type_end{align-items:flex-end}
+.photo_wedding.type_h100 .img_g{width:auto;height:100%} 
+
+
+.area_photo .wrap_photo.case_list{padding-top:12.53vw}
+.wrap_photo.case_list .thumb_photo{margin:0 5.33vw}
+.wrap_photo.case_list .thumb_photo + .thumb_photo{padding-top:9.6vw}
+.wrap_photo.case_list .thumb_photo.w_full{width:100%;margin:0}
+.wrap_photo.case_list .thumb_photo.w_250{width:66.6vw;margin:0 auto}
+.wrap_photo.case_list .thumb_photo{overflow:hidden}
+.wrap_photo.case_list .thumb_photo .float_l{float:left}
+.wrap_photo.case_list .thumb_photo .float_r{float:right}
+.wrap_photo.case_list .photo2{width:41.6vw}
+.wrap_photo.case_list .photo3{width:41.6vw;margin-top:20.26vw}
+.wrap_photo.case_list .photo5{width:59.73vw}
+.wrap_photo.case_list .photo6{width:41.6vw}
+.wrap_photo.case_list .photo7{width:78.4vw;margin:0 auto}
+
+.case_scroll .slide_photo .photo_wedding{display:flex;position:relative;align-items:center;justify-content:center;overflow:hidden;width:80vw;height:110vw;margin-right:3.589vw}
+.case_scroll .slide_photo .photo_wedding.type_start{align-items:flex-start}
+.case_scroll .slide_photo .photo_wedding.type_end{align-items:flex-end}
+.case_scroll .slide_photo .photo_wedding.type_h100{overflow:hidden}
+.case_scroll .slide_photo .photo_wedding.type_h100 .wrap_img{height:100%}
+.case_scroll .slide_photo .photo_wedding.type_h100 .img_g{height:100%;object-fit:cover}
+
+
+
+.area_guide .box_map{height:240px;margin-top:50px;font-size:12px;line-height:240px;background-color:#F2BF80;text-align:center}
+.box_map .root_daum_roughmap_landing{width:100%!important}
+.box_map .root_daum_roughmap .wrap_controllers{box-sizing:border-box}
+
+.list_location{padding:9.11vw 4.44vw 8.33vw;font-family:'MaruBuri',serif}
+.list_location > li{overflow:hidden}
+.list_location > li + li{padding-top:15px}
+.list_location .tit_info{float:left;position:relative;min-width:11.11vw;padding-right:2.5vw;font-weight:400;font-size:3.89vw;line-height:5.8vw;color:#333}
+.list_location .tit_info:before{position:absolute;right:0;top:4px;width:1px;height:3.61vw;line-height:4.2vw;background-color:#333;content:''}
+.list_location .wrap_txt{overflow:hidden;padding-left:2.77vw;font-weight:400;font-size:3.61vw}
+.list_location .desc_info{display:block;line-height:5.8vw;word-break:keep-all;word-wrap:normal}
+.list_location > li .desc_info + .desc_info{padding-top:1.11vw}
+.list_location .list_bus{margin-top:-1px}
+.list_location .list_bus li + li{padding-top:3.05vw}
+.list_location .list_bus .desc_info + .desc_info{padding-top:0.55vw}
+
+.list_location .desc_info{overflow:hidden}
+.case_bus{float:left}
+.num_bus{display:block;overflow:hidden;padding-left:4px}
+
+.wrap_footer{padding:9.72vw 6.94vw 5.55vw;background-color:#E8E5E3;border-top:1px solid rgba(0,0,0,0.01)}
+.info_square{display:block;padding-top:3.89vw;color:#767270;font-size:3.05vw;line-height:5.55vw;text-align:center}
+.info_square .txt_name{display:inline-block;line-height:5.55vw;vertical-align:top}
+.list_share{font-size:0}
+.list_share li + li{margin-top:2.22vw}
+.list_share li{width:41.05vw;margin:0 auto}
+.list_share .link_share{display:inline-block;font-size:0;vertical-align:top}
+.list_share .link_share svg{display:inline-block;width:4.8vw;margin-top:0.55vw;vertical-align:top}
+.list_share .txt_share{display:inline-block;padding-left:0.83vw;font-size:3.33vw;line-height:5.83vw;vertical-align:top}
+
+.fade{opacity:0;-webkit-transform:translateY(8.33vw);transform:translateY(8.33vw)}
+.fade.on{opacity:1;-webkit-transform:translateY(0);transform:translateY(0);-webkit-transition: transform 1.2s cubic-bezier(0.33,1,0.68,1),opacity 1s cubic-bezier(0.33,1,0.68,1);transition:transform 1.2s cubic-bezier(0.33,1,0.68,1),opacity 1s cubic-bezier(0.33,1,0.68,1);-webkit-transition-delay:0.25s;transition-delay:0.25s}
+
+
+.area_bank{padding-bottom:9.16vw}
+.area_bank .wrap_tit{padding-top:8.33vw;text-align:center}
+.area_bank .wrap_tit svg{width:24px}
+.area_bank .tit_bank{display:block;padding-top:8px;font-weight:normal;font-size:3.88vw;font-family:'MaruBuri',serif;color:#333}
+.info_bank{margin:6.66vw 8.33vw 0}
+.info_bank .link_bank{display:block;position:relative;padding:2.77vw 4.44vw;font-size:3.88vw;line-height:5.83vw;background-color:rgba(191,179,168,0.3);border-radius:4px}
+.info_bank .box_bank{display:none;position:relative;padding:3.61vw 4.44vw;background-color:#fff}
+.link_bank .ico_arrow{position:absolute;right:4.44vw;top:4.72vw;width:0;height:0;border-top:6px solid rgba(0,0,0,0.2);/* 화살표 */border-left:5px solid transparent;border-right:5px solid transparent}
+.info_bank li.on .box_bank{display:block}
+.info_bank li.on .ico_arrow{-webkit-transform:rotate(180deg);transform:rotate(180deg)}
+.info_bank .txt_name{display:block;font-size:3.61vw;line-height:6.66vw}
+.info_bank .txt_bank{font-size:3.61vw}
+.info_bank .link_copy{display:inline-block;height:6.66vw;margin:-1.38vw 0 0 2.77vw;padding:0 12px;font-size:3.33vw;line-height:6.66vw;color:#fff;border:none;background-color:#BFD9D6;border-radius:3px;vertical-align:top}
+.list_bank li{position:relative}
+.list_bank li + li{padding-top:1.66vw}
+.list_bank li + li:before{position:absolute;left:0;top:0;right:0;height:6px;background-color:#f4f4f4;content:''}
+.link_smallsquare{display:block;text-decoration:underline}
+
+.order_flower{margin:3vw 6vw 7vw;padding-top:10vw;font-family:'MaruBuri',serif;border-top:1px dashed rgba(0,0,0,0.07)}
+.order_flower .wrap_tit{text-align:center}
+.order_flower .tit_flower{display:inline-block;font-weight:normal;color:#000;font-size:3.73vw;line-height:1.5em;vertical-align:top;letter-spacing:0.02em}
+.order_flower .txt_flower{padding-top:6vw;font-size:3.67vw;color:#444;line-height:1.6em;text-align:center}
+.order_flower .wrap_btn{display:block;padding-top:4vw;text-align:center}
+.order_flower .wrap_btn .link_flower{display:inline-block;padding:3vw 0 0;font-size:3.66vw;color:#2d2206;border-bottom:1px solid #2d2206;vertical-align:top}
+
+.box_booth{display:block;margin:10vw 5.333vw 0;padding:6.667vw 0 0;font-weight:normal;font-size:3.8vw;line-height:1.6em;font-family:'MaruBuri',serif;color:#333;text-align:center}
+.box_booth .tit_booth{display:inline-block;position:relative;font-weight:normal;font-size:3.7vw;line-height:1.5em;color:#1a1a1a;vertical-align:top}
+.box_booth .tit_booth:before{position:absolute;z-index:-1;bottom:0;left:-1.067vw;right:-1.067vw;height:2.4vw;background-color:#d9cec1aa;content:''}
+.box_booth .desc_booth{display:block;padding-top:7vw;font-size:3.7vw;line-height:1.65em;color:#666;letter-spacing:-0.02em}
+
+@media screen and (min-width:640px){
+    .wrap_main, .wrap_footer{width:640px;margin:0 auto;box-sizing:border-box}
+    .wrap_main{padding-bottom:53px}
+    .txt_small{font-size:18px}
+    .area_intro .txt_date{top:48px;right:71px;font-size:20px;line-height:18px}
+    .couple_name{right:-44px;font-size:21px}
+    .couple_name .item_txt{padding:3px 0}
+    .couple_name .txt_and{padding:16px 0}
+    .area_intro{padding-bottom:53.312px}
+    .area_intro .thumb_img{padding:78px 71px 71px}
+    .area_intro .thumb_img:after{left:71px;right:71px;top:78px;bottom:71px}
+    .area_intro .txt_intro{right:50px;bottom:14.72px;font-size:93px;line-height:106px}
+    .desc_intro{padding:80px 0 106px;font-size:25px;line-height:50px}
+    .area_banner{height:614px}
+    .inner_banner{position:static;background-position:50% 100%}
+    .area_tit{padding-top:124px}
+    .tit_g{font-size:24px;line-height:39px}
+    .info_couple{padding-top:71px}
+    .info_couple .txt_parent{font-size:23px}
+    .info_couple .txt_parent .txt_bold{font-size:24px}
+    .wrap_fa .ico_flower{left:-25.6px;width:20.48px;height:20.48px;margin-top:10.56px}
+    .info_couple .txt_relation{min-width:53px;padding:0 8px;font-size:23px}
+    .info_couple .txt_name{font-size:25px}
+    .info_couple [class*="info_"]{line-height:46px}
+    .info_couple .link_call, .info_host .link_call{padding:0 10px}
+    .info_host #call_1, .info_host #call_2, .info_host #call_3, .info_host #call_4, .info_couple #call_5, .info_couple #call_6{width:26.624px;height:26.624px;margin:8.832px 0}
+    .info_host{width:444px;margin:35px auto 0;padding:35px 0 39px}
+    .info_host .tit_host{font-size:23px}
+    .info_host .desc_host{padding-top:23px}
+    .info_host .mark_host{width:35px;height:35px;margin:5px 0px;font-size:21px;line-height:35px}
+    .info_host .txt_name{margin:5px 0;padding-left:7px;font-size:23px;line-height:35px}
+    .area_calendar{padding-top:67px}
+    .area_calendar .txt_month{font-size:28px;line-height:42px}
+    .area_calendar .wrap_calendar{padding-top:21px}
+    .tbl_month{width:533px}
+    .tbl_month tr th{font-size:25px;padding:39px 12px}
+    .tbl_month tr td{font-size:25px;padding:16px 12px}
+    .tbl_month .emph_day:before{width:53px;height:53px}
+    .area_date .info_day{width:512px;margin:51.2px auto;padding:41.6px 0;font-family:NanumSquare,san-serif;font-weight:500;font-size:24.896px;line-height:1.5;border-top:1px solid rgba(0,0,0,0.07);border-bottom:1px solid rgba(0,0,0,0.07);color:#000;text-align:center}
+    .area_photo .txt_photo{padding-top:55px;font-size:23px;line-height:35px}
+    .area_photo .wrap_photo{padding-top:84px}
+    .list_location{padding:71px 28px 53px}
+    .list_location .tit_info{min-width:71px;padding-right:16px;line-height:37px;font-size:24px}
+    .list_location .tit_info:before{height:23px}
+    .list_location .wrap_txt{margin-top:0;padding-left:17px;font-size:23px;line-height:37px}
+    .list_location .desc_info{line-height:37px}
+    .list_location .list_bus li + li{padding-top:19px}
+    .list_location .list_bus .desc_info + .desc_info{padding-top:3px}
+    .area_bank .wrap_tit{padding-top:53px}
+    .area_bank .wrap_tit svg{width:42px}
+    .info_bank{margin:42px 53px 0}
+    .area_bank{padding-bottom:58px}
+    .area_bank .tit_bank{font-size:25px}
+    .info_bank .link_bank{padding:17px 28px;font-size:24px;line-height:37px}
+    .link_bank .ico_arrow{right:28px;top:30px}
+    .info_bank .box_bank{padding:23px 28px}
+    .info_bank .txt_name{font-size:23px;line-height:42px}
+    .info_bank .txt_bank{font-size:23px}
+    .info_bank .link_copy{height:42px;margin:-9px 0 0 17px;font-size:21px;line-height:42px}
+    .wrap_footer{padding:62px 44px 35px}
+    .list_share .link_share svg{width:30px;margin-top:3px}
+    .list_share .txt_share{padding-left:5px;font-size:19px;line-height:37px}
+    .list_share .link_share{font-size:21px}
+    .list_share li{width:243px}
+    .list_share li + li{margin-top:14px}
+    .info_square{padding-top:25px;font-size:19px;line-height:35px}
+    .info_square .txt_name{line-height:35px}
+    .txt_g{font-size:22px}
+
+    .slide_photo .photo_wedding{height:960px}
+    .slide_photo .flicking-pagination{padding:19px;font-size:24px;line-height:38px}
+
+    .order_flower{margin:19px 38px 45px;padding-top:64px}
+    .order_flower .tit_flower{font-size:24px}
+    .order_flower .txt_flower{padding-top:38px;font-size:23px}
+    .order_flower .wrap_btn{padding-top:25px}
+    .order_flower .wrap_btn .link_flower{padding:19px 0 0;font-size:23px}
+
+    .box_booth{margin:64px 34px 0;padding:42px 0 0;font-weight:normal;font-size:25px}
+    .box_booth .tit_booth{font-size:24px}
+    .box_booth .tit_booth:before{left:-6.829px;right:-6.829px;height:15.36px}
+    .box_booth .desc_booth{padding-top:30px;font-size:24px}
+
+    .wrap_photo.case_list .thumb_photo{margin:0 34px}
+    .wrap_photo.case_list .thumb_photo + .thumb_photo{padding-top:61px}
+    .wrap_photo.case_list .thumb_photo.w_250{width:426px}
+    .wrap_photo.case_list .photo2{width:266px}
+    .wrap_photo.case_list .photo3{width:266px;margin-top:130px}
+    .wrap_photo.case_list.photo5{width:382px}
+    .wrap_photo.case_list .photo6{width:266px}
+    .wrap_photo.case_list .photo7{width:502px}
+
+    .case_scroll .slide_photo .photo_wedding{width:512px;height:704px;margin-right:22.97px}
+
+}
