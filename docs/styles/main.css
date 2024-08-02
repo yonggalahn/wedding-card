@@ -9957,12 +9957,15 @@ body {
     .ww-rsvp-detail .ww-rsvp-form {
         padding-left: 10%;
     }
+    .ww-gallery{display:none;}
+    .mbGallery{display:block;}
 }
 
 @media (max-width: 576px) {
     .ww-rsvp-detail .ww-rsvp-form {
         padding-left: 0%;
     }
+    
 }
 
 .ww-rsvp-detail .ww-rsvp-form .form-control {

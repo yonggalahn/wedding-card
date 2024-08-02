@@ -17,7 +17,10 @@
     <link href="css/ekko-lightbox.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Gugi|Noto+Serif+KR|Stylish|Sunflower:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet"> <!-- Noto sans -->
     <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+    <script src="js/swiper/swiper.min.js"></script>
+    <link rel="stylesheet" href="js/swiper/swiper.css">
 
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -84,7 +87,6 @@
 
     </script>
 </head>
-<!-- 20240802 merge TEST -->
 <body id="top">
 <header></header>
 <div id="fb-root"></div>
@@ -187,10 +189,60 @@
             </div>
         </div>
         </div>
+        <!-- [S] gallery -->
         <div class="ww-section" id="gallery">
             <div class="ww-photo-gallery">
                 <div class="container">
                     <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">Photo</h2>
+                    <!-- [S] swiper mobileOnly -->
+					<div class="mbGallery swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+                                <img alt="Gallery Pic 1" class="img-fluid" src="images/pic1.jpg"/>
+                            </div>
+							<div class="swiper-slide">
+                                <img alt="Gallery Pic 2" class="img-fluid" src="images/pic2.jpg"/>
+                            </div>
+							<div class="swiper-slide">
+                                <img alt="Gallery Pic 3" class="img-fluid" src="images/pic3.jpg"/>
+                            </div>
+							<div class="swiper-slide">
+                                <img alt="Gallery Pic 4" class="img-fluid" src="images/pic4.jpg"/>
+                            </div>
+							<div class="swiper-slide">
+                                <img alt="Gallery Pic 5" class="img-fluid" src="images/pic5.jpg"/>
+                            </div>
+							<div class="swiper-slide">
+                                <img alt="Gallery Pic 6" class="img-fluid" src="images/pic6.jpg"/>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"><i class="icon-right-open-big"></i></div>
+                            <div class="swiper-button-prev"><i class="icon-left-open-big"></i></div>
+                            <script>
+                                var swiper = new Swiper('.swiper-container', {
+                                    slidesPerView: 1,
+                                    spaceBetween: 0,
+                                    autoplay: {
+                                        delay: 3000,
+                                    },
+                                    pagination: {
+                                        el: '.swiper-pagination',
+                                        clickable: true,
+                                        renderBullet: function (index, className) {
+                                            return '<span class="' + className + '">' + (menu[index]) + '</span>';
+                                        },
+                                    },
+                                navigation: {
+                                    nextEl: '.swiper-button-next',
+                                    prevEl: '.swiper-button-prev',
+                                },
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <!--// [E] swiper mobileOnly -->
                     <div class="ww-gallery">
                         <div class="card-columns">				
                             <div class="card" data-groups="[&quot;party&quot;,&quot;wedding&quot;]">
@@ -213,8 +265,7 @@
                                     <img alt="Gallery Pic 5" class="img-fluid" src="images/pic4.jpg"/>
                                 </a>
                             </div>
-                            <div class="card"
-                                 data-groups="[&quot;wedding&quot;,&quot;ceremony&quot;,&quot;party&quot;]">
+                            <div class="card" data-groups="[&quot;wedding&quot;,&quot;ceremony&quot;,&quot;party&quot;]">
                                 <a data-gallery="ww-gallery" data-toggle="lightbox">
                                     <img alt="Gallery Pic 6" class="img-fluid" src="images/pic5.jpg"/>
                                 </a>
@@ -229,6 +280,7 @@
                 </div>
             </div>
         </div>
+        <!--// [E] gallery -->
         <div class="ww-section ww-rsvp-detail" id="map">
             <div class="container">
                 <div class="col text-center">
@@ -248,16 +300,13 @@
                     <div class="col-md-12">
                         <div class="my-3 text-center">
                             <a href="https://naver.me/5Y1S5cJX">
-                                <img alt="naver-map" class="map-icon" id="naver-map"
-                                     src="images/map/naver-map.png"/>
+                                <img alt="naver-map" class="map-icon" id="naver-map" src="images/map/naver-map.png"/>
                             </a>
                             <a href="https://map.kakao.com/?itemId=8541437">
-                                <img alt="kakao-map" class="map-icon" id="kakao-map"
-                                     src="images/map/kakao-map.png"/>
+                                <img alt="kakao-map" class="map-icon" id="kakao-map" src="images/map/kakao-map.png"/>
                             </a>
                             <a href="https://maps.app.goo.gl/zEeRLwNVPuSQyUec7">
-                                <img alt="google-map" class="map-icon" id="google-map"
-                                     src="images/map/google-map.png"/>
+                                <img alt="google-map" class="map-icon" id="google-map" src="images/map/google-map.png"/>
                             </a>
                         </div
                         <div class="my-3">
