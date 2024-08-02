@@ -215,32 +215,29 @@
 							<div class="swiper-slide">
                                 <img alt="Gallery Pic 6" class="img-fluid" src="images/pic6.jpg"/>
                             </div>
-                            <!-- Add Pagination -->
-                            <div class="swiper-pagination"></div>
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"><i class="icon-right-open-big"></i></div>
-                            <div class="swiper-button-prev"><i class="icon-left-open-big"></i></div>
-                            <script>
-                                var swiper = new Swiper('.swiper-container', {
-                                    slidesPerView: 1,
-                                    spaceBetween: 0,
-                                    autoplay: {
-                                        delay: 3000,
-                                    },
-                                    pagination: {
-                                        el: '.swiper-pagination',
-                                        clickable: true,
-                                        renderBullet: function (index, className) {
-                                            return '<span class="' + className + '">' + (menu[index]) + '</span>';
-                                        },
-                                    },
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"><i class="icon-right-open-big"></i></div>
+                        <div class="swiper-button-prev"><i class="icon-left-open-big"></i></div>
+                        <script>
+                            var swiper = new Swiper('.swiper-container', {
+                                slidesPerView: 1,
+                                spaceBetween: 0,
+                                // autoplay: {
+                                //     delay: 3000,
+                                // },
+                                pagination: {
+                                    el: '.swiper-pagination',
+                                    clickable: true,
+                                },
                                 navigation: {
                                     nextEl: '.swiper-button-next',
                                     prevEl: '.swiper-button-prev',
                                 },
-                                });
-                            </script>
-                        </div>
+                            });
+                        </script>
                     </div>
                     <!--// [E] swiper mobileOnly -->
                     <div class="ww-gallery">
