@@ -27,10 +27,10 @@
   $(function(){
     var clipboard = new ClipboardJS('#copy');
     clipboard.on('success', function(e) {
-      alert("Copy");
+      alert("계좌번호를 복사하였습니다.");
     });
     clipboard.on('error', function(e) {
-      alert("Copy Failed");
+      alert("계좌번호 복사에 실패하였습니다.");
     });
 });
 	</script>
@@ -130,7 +130,7 @@
 									김용택 (오스왈드)<span style="font-size:0.8em">故</span>허춘자 (실비아) 의 장녀 아람
 									<a class="mobile" href="tel:01087317092"><img style="width:25px;height:15px;" src="https://feelcard.co.kr/storefarm/card/skin/fall_in_love/img/call.svg"></a>
 									<a class="sms" href="sms:01087317092"><img style="width:25px;height:15px;" src="https://feelcard.co.kr/storefarm/card/skin/fall_in_love/img/sms.svg"></a>
-									<br><br><br><br></span>
+									<br><br><br></span>
 								</li>
                             </ul>
 							<input id="check-btn" type="checkbox" />
@@ -145,7 +145,7 @@
 									신부측 계좌번호<br>
 									김아람 농협 아라미계좌번호 <input style="font-size:0.9em" type="button" id="copy" value="복사" data-clipboard-text="아라미계좌번호"/><br>
 									김용택 농협 아부지계좌번호 <input style="font-size:0.9em" type="button" id="copy" value="복사" data-clipboard-text="아부지게좌번호"/>
-									</span>						
+									</span>
 								</li>
                             </ul>
                         </div>
