@@ -10076,6 +10076,12 @@ body {
     margin: 0px 15px 15px 15px;
 }
 
-#check-btn { display: none; }
-#check-btn:checked ~ .menubars { display: block; } 
-.menubars { display: none; }
+#check-btn {   
+	display: none;
+}
+#check-btn:checked ~ .menubars {
+	display: block;
+} 
+.menubars {
+	display: none;
+}
